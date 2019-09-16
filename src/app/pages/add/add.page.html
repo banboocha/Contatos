@@ -1,0 +1,72 @@
+<ion-content>
+  <ion-grid>
+    <ion-row class="ion-justify-content-center">
+      <ion-col sizeXs="12" sizeMd="6">
+        <ion-card>
+          <ion-card-header>
+            Cadastre-se
+          </ion-card-header>
+          <ion-card-content>
+            <form [formGroup]="form">
+              <ion-list>
+                <ion-item>
+                  <ion-label position="floating">Id</ion-label>
+                  <ion-input type="text" formControlName="id"></ion-input>
+                </ion-item>
+                <ion-item>
+                  <ion-label position="floating">Nome</ion-label>
+                  <ion-input type="text" formControlName="nome"></ion-input>
+                </ion-item>
+                <ion-item>
+                  <ion-label position="floating">imagem</ion-label>
+                  <ion-input type="text" formControlName="imagem"></ion-input>
+                </ion-item>
+                <ion-item>
+                  <ion-label position="floating">Cpf</ion-label>
+                  <ion-input type="text" formControlName="cpf"></ion-input>
+                </ion-item>
+                <ion-item>
+                  <ion-label position="floating">telefone</ion-label>
+                  <ion-input type="text" formControlName="telefone"></ion-input>
+                </ion-item>
+                <ion-item>
+                  <ion-label position="floating">zipcode </ion-label>
+                  <ion-input type="text" formControlName="zipcode"></ion-input>
+                </ion-item>
+                <ion-item>
+                  <ion-label position="floating">street</ion-label>
+                  <ion-input type="text" formControlName="street"></ion-input>
+                </ion-item>
+                <ion-item>
+                  <ion-label position="floating">number</ion-label>
+                  <ion-input type="text" formControlName="number"></ion-input>
+                </ion-item>
+                <ion-item>
+                  <ion-label position="floating">neighborhood</ion-label>
+                  <ion-input type="text" formControlName="neighborhood"></ion-input>
+                </ion-item>
+                <ion-item>
+                  <ion-label position="floating">state</ion-label>
+                  <ion-input type="text" formControlName="state"></ion-input>
+                </ion-item>
+                <ion-item>
+                  <ion-label position="floating">country</ion-label>
+                  <ion-input type="text" formControlName="country"></ion-input>
+                </ion-item>
+                <ion-item>
+                  <ion-label position="floating">email</ion-label>
+                  <ion-input type="text" formControlName="email"></ion-input>
+                </ion-item>
+              </ion-list>
+            </form>
+          </ion-card-content>
+        </ion-card>
+        <p>
+          <ion-button expand="full" size="large" [disabled]="form.invalid" (click)="submit()">Cadastrar</ion-button>
+          <br>
+          <ion-button routerLink="/" expand="full" size="clear">Cancelar</ion-button>
+        </p>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

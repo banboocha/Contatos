@@ -1,0 +1,339 @@
+{
+    "id": "mockoon_export",
+    "appVersion": "1.4.0",
+    "checksum": "515cb963f3a5c4b794f76a6f2b539da6",
+    "subject": "full",
+    "data": [
+        {
+            "uuid": "a19e82e0-d028-11e9-88f8-0b1334be45fa",
+            "name": "five",
+            "endpointPrefix": "",
+            "latency": 0,
+            "port": 3000,
+            "routes": [
+                {
+                    "uuid": "a19e82e1-d028-11e9-88f8-0b1334be45fa",
+                    "documentation": "",
+                    "method": "get",
+                    "endpoint": "address/13400000",
+                    "body": "{\n    \"street\": \"Rua dos Devs\",\n    \"number\":\"256\",\n    \"neighborhood\":\"Bairro do Devs\",\n    \"city\":\"Piracicaba\",\n    \"state\":\"SP\",\n    \"country\":\"BRA\"\n}",
+                    "latency": 1500,
+                    "statusCode": "200",
+                    "headers": [
+                        {
+                            "key": "",
+                            "value": ""
+                        }
+                    ],
+                    "filePath": "",
+                    "sendFileAsBody": false
+                },
+                {
+                    "uuid": "a19e82e2-d028-11e9-88f8-0b1334be45fa",
+                    "documentation": "customers",
+                    "method": "post",
+                    "endpoint": "customers",
+                    "body": "{\n    \"message\": \"Cliente cadastrado com sucesso!\",\n    \"success\":true,\n    \"data\": {\n        \"id\": \"0b09b24d-bc8c-400e-8e10-61aa93cd715d\"\n    }\n}",
+                    "latency": 1600,
+                    "statusCode": "200",
+                    "headers": [
+                        {
+                            "key": "",
+                            "value": ""
+                        }
+                    ],
+                    "filePath": "",
+                    "sendFileAsBody": false
+                },
+                {
+                    "uuid": "a19e82e3-d028-11e9-88f8-0b1334be45fa",
+                    "documentation": "customers",
+                    "method": "put",
+                    "endpoint": "customers/0b09b24d-bc8c-400e-8e10-61aa93cd715d",
+                    "body": "{\n    \"message\": \"Cliente alteradp com sucesso!\",\n    \"success\":true,\n    \"data\": {\n        \"id\": \"0b09b24d-bc8c-400e-8e10-61aa93cd715d\"\n    }\n}",
+                    "latency": 1000,
+                    "statusCode": "200",
+                    "headers": [
+                        {
+                            "key": "",
+                            "value": ""
+                        }
+                    ],
+                    "filePath": "",
+                    "sendFileAsBody": false
+                },
+                {
+                    "uuid": "a19e82e4-d028-11e9-88f8-0b1334be45fa",
+                    "documentation": "customers",
+                    "method": "delete",
+                    "endpoint": "customers/0b09b24d-bc8c-400e-8e10-61aa93cd715d",
+                    "body": "{\n    \"message\": \"Cliente excluido com sucesso!\",\n    \"success\":true,\n    \"data\": null\n}",
+                    "latency": 800,
+                    "statusCode": "200",
+                    "headers": [
+                        {
+                            "key": "",
+                            "value": ""
+                        }
+                    ],
+                    "filePath": "",
+                    "sendFileAsBody": false
+                },
+                {
+                    "uuid": "a19e82e5-d028-11e9-88f8-0b1334be45fa",
+                    "documentation": "customers",
+                    "method": "get",
+                    "endpoint": "customers",
+                    "body": "[\n{\"id\":\"0b09b24d-bc8c-400e-8e10-61aa93cd715d\",\"name\":\"Bruce Wayne\",\"email\":\"batman@balta.io\"},\n{\"id\":\"0b09b24d-bc8c-400e-8e10-61aa93cd715e\",\"name\":\"Peter Parker\",\"email\":\"spiderman@balta.io\"},\n{\"id\":\"0b09b24d-bc8c-400e-8e10-61aa93cd715f\",\"name\":\"Tony Stark\",\"email\":\"ironman@balta.io\"}\n]",
+                    "latency": 1000,
+                    "statusCode": "200",
+                    "headers": [
+                        {
+                            "key": "",
+                            "value": ""
+                        }
+                    ],
+                    "filePath": "",
+                    "sendFileAsBody": false
+                }
+            ],
+            "proxyMode": false,
+            "proxyHost": "",
+            "https": false,
+            "cors": true,
+            "headers": [
+                {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "key": "Access-Control-Allow-Origin",
+                    "value": "*"
+                },
+                {
+                    "key": "Access-Control-Allow-Headers",
+                    "value": "Origin, X-Requested-With, Content-Type, Accept"
+                },
+                {
+                    "key": "Access-Control-Allow-Methods",
+                    "value": "GET, POST, PUT, DELETE, OPTIONS"
+                }
+            ]
+        },
+        {
+            "uuid": "87233bd0-d038-11e9-88f8-0b1334be45fa",
+            "name": "cesta",
+            "endpointPrefix": "",
+            "latency": 0,
+            "port": 3001,
+            "routes": [
+                {
+                    "uuid": "006f8420-d355-11e9-b20f-73ad439f6dd0",
+                    "documentation": "",
+                    "method": "post",
+                    "endpoint": "products/",
+                    "body": "{\n    \"message\": \"Produto cadastrado com sucesso!\",\n    \"success\":true,\n    \"data\": {\n        \"id\": \"E0-138\"\n    }\n}",
+                    "latency": 1500,
+                    "statusCode": "200",
+                    "headers": [
+                        {
+                            "key": "",
+                            "value": ""
+                        }
+                    ],
+                    "filePath": "",
+                    "sendFileAsBody": false
+                },
+                {
+                    "uuid": "f83faf60-d038-11e9-88f8-0b1334be45fa",
+                    "documentation": "",
+                    "method": "put",
+                    "endpoint": "products/E0-138",
+                    "body": "{\n    \"message\": \"Produto alterado com sucesso!\",\n    \"success\":true,\n    \"data\": {\n        \"codigo\": \"E0-138\"\n    }\n}",
+                    "latency": 1500,
+                    "statusCode": "200",
+                    "headers": [
+                        {
+                            "key": "",
+                            "value": ""
+                        }
+                    ],
+                    "filePath": "",
+                    "sendFileAsBody": false
+                },
+                {
+                    "uuid": "2ac52ff0-d039-11e9-88f8-0b1334be45fa",
+                    "documentation": "",
+                    "method": "get",
+                    "endpoint": "products",
+                    "body": "[\n{\"codigo\":\"E0-138\",\"titulo\":\"HD SSD\",\"preco\":\"200,00\",\"descricao\":\"produto Novo\",\"quantidade\":\"10\",\"categoria\":\"1\"},\n{\"codigo\":\"E0-139\",\"titulo\":\"HD SATA\",\"preco\":\"160,00\",\"descricao\":\"produto Novo\",\"quantidade\":\"8\",\"categoria\":\"1\"},\n{\"codigo\":\"M0-659\",\"titulo\":\"PenDrive\",\"preco\":\"100,00\",\"descricao\":\"1024 GB\",\"quantidade\":\"2\",\"categoria\":\"3\"},\n{\"codigo\":\"L8-020\",\"titulo\":\"MousePad\",\"preco\":\"10,00\",\"descricao\":\"item Promocional\",\"quantidade\":\"1000\",\"categoria\":\"4\"},\n]",
+                    "latency": 1500,
+                    "statusCode": "200",
+                    "headers": [
+                        {
+                            "key": "",
+                            "value": ""
+                        }
+                    ],
+                    "filePath": "",
+                    "sendFileAsBody": false
+                },
+                {
+                    "uuid": "2c621710-d039-11e9-88f8-0b1334be45fa",
+                    "documentation": "",
+                    "method": "delete",
+                    "endpoint": "products/E0-138",
+                    "body": "{\n    \"message\": \"Produto excluido com sucesso!\",\n    \"success\":true,\n    \"data\": null\n}",
+                    "latency": 1500,
+                    "statusCode": "200",
+                    "headers": [
+                        {
+                            "key": "",
+                            "value": ""
+                        }
+                    ],
+                    "filePath": "",
+                    "sendFileAsBody": false
+                },
+                {
+                    "uuid": "0af12ed0-d355-11e9-b20f-73ad439f6dd0",
+                    "documentation": "",
+                    "method": "post",
+                    "endpoint": "accounts/authenticate",
+                    "body": "{\r\n   \"user\":\"bamboo159\",\r\n   \"name\":\"Jose R. Morais\",\r\n   \"email\":\"felipe.camara@gmail.com\",\r\n   \"image\":\"minha imagem\",\r\n   \"roles\":[\"administrador\", \"manager\"]\r\n   \"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c\"\r\n}",
+                    "latency": 0,
+                    "statusCode": "200",
+                    "headers": [
+                        {
+                            "key": "",
+                            "value": ""
+                        }
+                    ],
+                    "filePath": "",
+                    "sendFileAsBody": false
+                }
+            ],
+            "proxyMode": false,
+            "proxyHost": "",
+            "https": false,
+            "cors": true,
+            "headers": [
+                {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "key": "Access-Control-Allow-Origin",
+                    "value": "*"
+                },
+                {
+                    "key": "Access-Control-Allow-Methods",
+                    "value": "GET,POST,PUT,PATCH,DELETE,HEAD,OPTIONS"
+                },
+                {
+                    "key": "Access-Control-Allow-Headers",
+                    "value": "Content-Type, Origin, Accept, Authorization, Content-Length, X-Requested-With"
+                }
+            ]
+        },
+        {
+            "uuid": "c6d769f0-d5af-11e9-9318-e904764d5507",
+            "name": "contatos",
+            "endpointPrefix": "",
+            "latency": 0,
+            "port": 4005,
+            "routes": [
+                {
+                    "uuid": "",
+                    "documentation": "",
+                    "method": "get",
+                    "endpoint": "contatos/",
+                    "body": "[\r\n{\"id\":\"1\",\r\n\"nome\":\"jose roberto\",\r\n\"imagem\":\"https://picsum.photos/id/30/200/200\",\r\n\"cpf\":\"23070819842\",\r\n\"telefone\":\"169992239192\",\r\n\"zipcode\":\"15970000\",\r\n\"street\":\"rua malarian\",\r\n\"number\":\"10\",\r\n\"city\":\"Araraquara\",\r\n\"neighborhood\":\"centro\",\r\n\"state\":\"SP\",\r\n\"email\":\"teste@teste.com\",\r\n\"country\":\"BR\"},\r\n{\"id\":\"2\",\r\n\"nome\":\"Edynea\",\r\n\"imagem\":\"https://picsum.photos/id/30/200/200\",\r\n\"cpf\":\"23070819842\",\r\n\"telefone\":\"169992239192\",\r\n\"zipcode\":\"15970000\",\r\n\"street\":\"rua malarian\",\r\n\"number\":\"10\",\r\n\"city\":\"Araraquara\",\r\n\"neighborhood\":\"centro\",\r\n\"state\":\"SP\",\r\n\"email\":\"teste@teste.com\",\r\n\"country\":\"BR\"},\r\n{\"id\":\"3\",\r\n\"nome\":\"William \",\r\n\"imagem\":\"https://picsum.photos/id/30/200/200\",\r\n\"cpf\":\"23070819842\",\r\n\"telefone\":\"169992239192\",\r\n\"zipcode\":\"15970000\",\r\n\"street\":\"rua malarian\",\r\n\"number\":\"10\",\r\n\"city\":\"Araraquara\",\r\n\"neighborhood\":\"centro\",\r\n\"state\":\"SP\",\r\n\"email\":\"teste@teste.com\",\r\n\"country\":\"BR\"},\r\n{\"id\":\"4\",\r\n\"nome\":\"vovo\",\r\n\"imagem\":\"https://picsum.photos/id/30/200/200\",\r\n\"cpf\":\"23070819842\",\r\n\"telefone\":\"169992239192\",\r\n\"zipcode\":\"15970000\",\r\n\"street\":\"rua malarian\",\r\n\"number\":\"10\",\r\n\"city\":\"Araraquara\",\r\n\"neighborhood\":\"centro\",\r\n\"state\":\"SP\",\r\n\"email\":\"teste@teste.com\",\r\n\"country\":\"BR\"}\r\n]\r\n",
+                    "latency": 0,
+                    "statusCode": "200",
+                    "headers": [
+                        {
+                            "key": "",
+                            "value": ""
+                        }
+                    ],
+                    "filePath": "",
+                    "sendFileAsBody": false
+                },
+                {
+                    "uuid": "a6edcbf0-d5c0-11e9-9318-e904764d5507",
+                    "documentation": "",
+                    "method": "post",
+                    "endpoint": "contatos/resetpassword/",
+                    "body": "{\n    \"message\": \"Seu pedido de reset de senha foi enviado com sucesso!\",\n    \"success\":true,\n    \"data\": {\n        \"id\": \"1\"\n    }\n}",
+                    "latency": 1500,
+                    "statusCode": "200",
+                    "headers": [
+                        {
+                            "key": "",
+                            "value": ""
+                        }
+                    ],
+                    "filePath": "",
+                    "sendFileAsBody": false
+                },
+                {
+                    "uuid": "5ae98330-d5c4-11e9-9318-e904764d5507",
+                    "documentation": "",
+                    "method": "post",
+                    "endpoint": "contato/",
+                    "body": "{\n    \"message\": \"Contato criado com sucesso!\",\n    \"success\":true,\n    \"data\": {\n        \"id\": \"102\"\n    }\n}",
+                    "latency": 0,
+                    "statusCode": "200",
+                    "headers": [
+                        {
+                            "key": "",
+                            "value": ""
+                        }
+                    ],
+                    "filePath": "",
+                    "sendFileAsBody": false
+                },
+                {
+                    "uuid": "f0ff1120-d626-11e9-9318-e904764d5507",
+                    "documentation": "",
+                    "method": "get",
+                    "endpoint": "contatos/1",
+                    "body": "{\r\n\"id\":\"1\",\r\n\"nome\":\"jose roberto\",\r\n\"imagem\":\"https://picsum.photos/id/30/200/200\",\r\n\"cpf\":\"23070819842\",\r\n\"telefone\":\"169992239192\",\r\n\"zipcode\":\"15970000\",\r\n\"street\":\"rua malarian\",\r\n\"number\":\"10\",\r\n\"city\":\"Araraquara\",\r\n\"neighborhood\":\"centro\",\r\n\"state\":\"SP\",\r\n\"email\":\"teste@teste.com\",\r\n\"country\":\"BR\"},\r\n{\"id\":\"2\",\r\n\"nome\":\"Edynea\",\r\n\"imagem\":\"https://picsum.photos/id/30/200/200\",\r\n\"cpf\":\"23070819842\",\r\n\"telefone\":\"169992239192\",\r\n\"zipcode\":\"15970000\",\r\n\"street\":\"rua malarian\",\r\n\"number\":\"10\",\r\n\"city\":\"Araraquara\",\r\n\"neighborhood\":\"centro\",\r\n\"state\":\"SP\",\r\n\"email\":\"teste@teste.com\",\r\n\"country\":\"BR\"\r\n}",
+                    "latency": 0,
+                    "statusCode": "200",
+                    "headers": [
+                        {
+                            "key": "",
+                            "value": ""
+                        }
+                    ],
+                    "filePath": "",
+                    "sendFileAsBody": false
+                }
+            ],
+            "proxyMode": false,
+            "proxyHost": "",
+            "https": false,
+            "cors": true,
+            "headers": [
+                {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "key": "Access-Control-Allow-Origin",
+                    "value": "*"
+                },
+                {
+                    "key": "Access-Control-Allow-Methods",
+                    "value": "GET,POST,PUT,PATCH,DELETE,HEAD,OPTIONS"
+                },
+                {
+                    "key": "Access-Control-Allow-Headers",
+                    "value": "Content-Type, Origin, Accept, Authorization, Content-Length, X-Requested-With"
+                }
+            ]
+        }
+    ]
+}
